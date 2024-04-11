@@ -25,7 +25,7 @@ def cF(m):
     return b
 
 def sDeterminer(s):
-    r, i, p, s = [], 0, [], str((s+7)**8 // 3)
+    r, i, p, s = [], 0, [], str((s+7)*256)
     while i < len(s):
         r.append(s[i:i + (3 if len(r) % 2 == 0 else 1)])
         i += 3 if len(r) % 2 == 0 else 1
